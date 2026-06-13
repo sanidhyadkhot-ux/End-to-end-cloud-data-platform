@@ -1,0 +1,13 @@
+name: cloud_data_platform
+version: 1.0
+profile: cloud_data_platform
+model-paths: ["models"]
+test-paths: ["tests"]
+models:
+  cloud_data_platform:
+    bronze:
+      materialized: view
+    silver:
+      materialized: table
+    gold:
+      materialized: table

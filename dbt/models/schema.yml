@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: silver_market
+    columns:
+      - name: event_timestamp
+        tests:
+          - not_null
+      - name: symbol
+        tests:
+          - not_null
+      - name: price
+        tests:
+          - not_null
+  - name: gold_market_daily_metrics
+    columns:
+      - name: symbol
+        tests:
+          - not_null
